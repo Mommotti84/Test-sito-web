@@ -10,6 +10,7 @@
   --cyan: #7bd7f6;
   --sand: #dfc197;
   --hero-photo: url("./assets/bmw-club-sardegna-hero.jpg");
+  --showcase-photo: url("./assets/club-showcase-bg.jpeg");
   --shadow: 0 30px 80px rgba(0, 0, 0, 0.28);
   --radius-xl: 32px;
   --radius-lg: 24px;
@@ -349,8 +350,10 @@ h1 {
 .main-card {
   min-height: 320px;
   background:
-    linear-gradient(180deg, rgba(8, 12, 17, 0.14), rgba(8, 12, 17, 0.62)),
+    linear-gradient(180deg, rgba(6, 10, 14, 0.18), rgba(6, 10, 14, 0.72)),
+    linear-gradient(135deg, rgba(5, 10, 14, 0.08), rgba(5, 10, 14, 0.56)),
     radial-gradient(circle at 25% 18%, rgba(123, 215, 246, 0.24), transparent 28%),
+    var(--showcase-photo) center center / cover no-repeat,
     linear-gradient(135deg, rgba(47, 128, 255, 0.22), rgba(8, 12, 17, 0.78));
 }
 
