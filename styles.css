@@ -418,6 +418,16 @@ h1 {
   font-size: 0.88rem;
 }
 
+.panel-kicker {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 18px;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cyan);
+}
+
 .showcase-grid strong,
 .panel h3,
 .route-card h3 {
@@ -459,7 +469,9 @@ h1 {
 
 .panel-large {
   display: flex;
-  align-items: end;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(8, 12, 17, 0.08)),
     linear-gradient(135deg, rgba(223, 193, 151, 0.18), rgba(47, 128, 255, 0.12));
@@ -469,6 +481,25 @@ h1 {
   max-width: 52ch;
   font-size: 1.08rem;
   line-height: 1.8;
+}
+
+.panel-link {
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.panel-link:hover,
+.panel-link:focus-visible {
+  transform: translateY(-4px);
+  border-color: rgba(123, 215, 246, 0.3);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(8, 12, 17, 0.1)),
+    linear-gradient(135deg, rgba(223, 193, 151, 0.22), rgba(47, 128, 255, 0.16));
+}
+
+.panel-action {
+  margin-top: 24px;
+  font-weight: 700;
+  color: var(--text);
 }
 
 .panel h3,
@@ -570,6 +601,79 @@ h1 {
   gap: 24px;
 }
 
+.story-page {
+  display: grid;
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.story-nav {
+  gap: 14px;
+}
+
+.story-hero h1 {
+  max-width: 14ch;
+  font-size: clamp(3rem, 6vw, 5.2rem);
+}
+
+.story-lead {
+  max-width: 70ch;
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.story-layout {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 18px;
+}
+
+.story-card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+  backdrop-filter: blur(10px);
+}
+
+.story-card-main p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.story-card-main p + p {
+  margin-top: 22px;
+}
+
+.story-card-side {
+  display: grid;
+  align-content: start;
+  gap: 16px;
+}
+
+.story-milestone {
+  padding: 18px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.story-milestone strong {
+  display: block;
+  font-size: 1.2rem;
+  color: var(--sand);
+}
+
+.story-milestone p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
 .footer-actions {
   display: flex;
   flex-wrap: wrap;
@@ -597,7 +701,8 @@ h1 {
   .hero,
   .intro-layout,
   .route-grid,
-  .experience-layout {
+  .experience-layout,
+  .story-layout {
     grid-template-columns: 1fr;
   }
 
