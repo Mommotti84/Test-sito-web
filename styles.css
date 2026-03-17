@@ -708,6 +708,12 @@ h1 {
   display: block;
 }
 
+.marketplace-order-layout {
+  display: grid;
+  grid-template-columns: 0.82fr 1.18fr;
+  gap: 18px;
+}
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -742,6 +748,81 @@ h1 {
   margin: 16px 0 0;
   color: var(--muted);
   line-height: 1.7;
+}
+
+.product-select-button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.order-form-panel {
+  display: grid;
+  gap: 18px;
+}
+
+.order-form-panel h3 {
+  font-size: clamp(1.9rem, 3vw, 2.5rem);
+  line-height: 1.04;
+}
+
+.order-form-intro,
+.order-form-helper {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.order-form-status {
+  margin: 0;
+  min-height: 1.6em;
+  color: var(--cyan);
+  line-height: 1.6;
+}
+
+.order-form {
+  display: grid;
+  gap: 16px;
+}
+
+.field-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.field {
+  display: grid;
+  gap: 10px;
+}
+
+.field span {
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.04);
+  outline: none;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: rgba(123, 215, 246, 0.4);
+  box-shadow: 0 0 0 3px rgba(47, 128, 255, 0.12);
 }
 
 .story-milestone {
@@ -792,6 +873,7 @@ h1 {
   .route-grid,
   .experience-layout,
   .story-layout,
+  .marketplace-order-layout,
   .product-grid {
     grid-template-columns: 1fr;
   }
@@ -888,6 +970,10 @@ h1 {
 
   .marketplace-tabs {
     display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .field-grid {
     grid-template-columns: 1fr;
   }
 }

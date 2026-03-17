@@ -55,6 +55,7 @@
             aria-selected="true"
             aria-controls="panel-felpe"
             data-tab-target="panel-felpe"
+            data-category="Felpe"
           >
             Felpe
           </button>
@@ -66,6 +67,7 @@
             aria-selected="false"
             aria-controls="panel-tshirt"
             data-tab-target="panel-tshirt"
+            data-category="T-shirt"
             tabindex="-1"
           >
             T-shirt
@@ -78,6 +80,7 @@
             aria-selected="false"
             aria-controls="panel-cappellini"
             data-tab-target="panel-cappellini"
+            data-category="Cappellini"
             tabindex="-1"
           >
             Cappellini
@@ -91,20 +94,29 @@
           aria-labelledby="tab-felpe"
         >
           <div class="product-grid">
-            <article class="product-card">
+            <article class="product-card" data-category="Felpe" data-product="Felpa Club Essential">
               <span class="product-tag">Felpe</span>
               <h3>Felpa Club Essential</h3>
               <p>Versione pulita con branding frontale discreto e taglio sportivo.</p>
+              <button class="button button-secondary product-select-button" type="button" data-select-product>
+                Ordina questo capo
+              </button>
             </article>
-            <article class="product-card">
+            <article class="product-card" data-category="Felpe" data-product="Felpa Road Tour">
               <span class="product-tag">Felpe</span>
               <h3>Felpa Road Tour</h3>
               <p>Ispirata ai raduni del club, con un look piu deciso per gli eventi stagionali.</p>
+              <button class="button button-secondary product-select-button" type="button" data-select-product>
+                Ordina questo capo
+              </button>
             </article>
-            <article class="product-card">
+            <article class="product-card" data-category="Felpe" data-product="Felpa Signature BCS">
               <span class="product-tag">Felpe</span>
               <h3>Felpa Signature BCS</h3>
               <p>Modello premium pensato per una linea ufficiale elegante e riconoscibile.</p>
+              <button class="button button-secondary product-select-button" type="button" data-select-product>
+                Ordina questo capo
+              </button>
             </article>
           </div>
         </div>
@@ -117,20 +129,29 @@
           hidden
         >
           <div class="product-grid">
-            <article class="product-card">
+            <article class="product-card" data-category="T-shirt" data-product="T-shirt Classic Logo">
               <span class="product-tag">T-shirt</span>
               <h3>T-shirt Classic Logo</h3>
               <p>Una base essenziale per il merchandising quotidiano del club.</p>
+              <button class="button button-secondary product-select-button" type="button" data-select-product>
+                Ordina questo capo
+              </button>
             </article>
-            <article class="product-card">
+            <article class="product-card" data-category="T-shirt" data-product="T-shirt Event Edition">
               <span class="product-tag">T-shirt</span>
               <h3>T-shirt Event Edition</h3>
               <p>Perfetta per lanciare versioni dedicate ai singoli raduni o tour speciali.</p>
+              <button class="button button-secondary product-select-button" type="button" data-select-product>
+                Ordina questo capo
+              </button>
             </article>
-            <article class="product-card">
+            <article class="product-card" data-category="T-shirt" data-product="T-shirt Coastal Drive">
               <span class="product-tag">T-shirt</span>
               <h3>T-shirt Coastal Drive</h3>
               <p>Una proposta fresca e legata all'identita sarda del club.</p>
+              <button class="button button-secondary product-select-button" type="button" data-select-product>
+                Ordina questo capo
+              </button>
             </article>
           </div>
         </div>
@@ -143,22 +164,126 @@
           hidden
         >
           <div class="product-grid">
-            <article class="product-card">
+            <article class="product-card" data-category="Cappellini" data-product="Cap Classic BCS">
               <span class="product-tag">Cappellini</span>
               <h3>Cap Classic BCS</h3>
               <p>Profilo pulito e logo in evidenza per un accessorio sempre portabile.</p>
+              <button class="button button-secondary product-select-button" type="button" data-select-product>
+                Ordina questo capo
+              </button>
             </article>
-            <article class="product-card">
+            <article class="product-card" data-category="Cappellini" data-product="Cap Track Edition">
               <span class="product-tag">Cappellini</span>
               <h3>Cap Track Edition</h3>
               <p>Look piu sportivo, pensato per eventi, raduni e contenuti social del club.</p>
+              <button class="button button-secondary product-select-button" type="button" data-select-product>
+                Ordina questo capo
+              </button>
             </article>
-            <article class="product-card">
+            <article class="product-card" data-category="Cappellini" data-product="Cap Sardegna Route">
               <span class="product-tag">Cappellini</span>
               <h3>Cap Sardegna Route</h3>
               <p>Un modello che lega il merchandising al territorio e alle strade iconiche.</p>
+              <button class="button button-secondary product-select-button" type="button" data-select-product>
+                Ordina questo capo
+              </button>
             </article>
           </div>
+        </div>
+
+        <div class="marketplace-order-layout">
+          <article class="story-card story-card-side">
+            <span class="panel-kicker">Ordini via Telegram</span>
+            <div class="story-milestone">
+              <strong>1. Scegli il capo</strong>
+              <p>Usa i tab oppure clicca direttamente sul prodotto che vuoi ordinare.</p>
+            </div>
+            <div class="story-milestone">
+              <strong>2. Compila il form</strong>
+              <p>Inserisci taglia, quantita e i tuoi recapiti per preparare il messaggio.</p>
+            </div>
+            <div class="story-milestone">
+              <strong>3. Apri Telegram</strong>
+              <p>Il sito apre l'account del club e prepara il testo dell'ordine da incollare.</p>
+            </div>
+          </article>
+
+          <article class="story-card order-form-panel">
+            <span class="panel-kicker">Richiedi un ordine</span>
+            <h3>Invia la richiesta al club su Telegram</h3>
+            <p class="order-form-intro">
+              Compila il modulo, copia il testo dell'ordine e apri direttamente il profilo Telegram
+              del club.
+            </p>
+
+            <form class="order-form" data-telegram-order-form>
+              <div class="field-grid">
+                <label class="field">
+                  <span>Nome e cognome</span>
+                  <input type="text" name="customerName" required placeholder="Il tuo nome" />
+                </label>
+
+                <label class="field">
+                  <span>Telefono</span>
+                  <input type="tel" name="customerPhone" required placeholder="Il tuo numero" />
+                </label>
+              </div>
+
+              <div class="field-grid">
+                <label class="field">
+                  <span>Categoria</span>
+                  <select id="order-category" name="category" required>
+                    <option value="Felpe">Felpe</option>
+                    <option value="T-shirt">T-shirt</option>
+                    <option value="Cappellini">Cappellini</option>
+                  </select>
+                </label>
+
+                <label class="field">
+                  <span>Capo</span>
+                  <select id="order-product" name="product" required></select>
+                </label>
+              </div>
+
+              <div class="field-grid">
+                <label class="field">
+                  <span>Taglia</span>
+                  <select name="size" required>
+                    <option value="">Seleziona</option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                    <option value="Taglia unica">Taglia unica</option>
+                  </select>
+                </label>
+
+                <label class="field">
+                  <span>Quantita</span>
+                  <input type="number" name="quantity" min="1" value="1" required />
+                </label>
+              </div>
+
+              <label class="field">
+                <span>Note aggiuntive</span>
+                <textarea
+                  name="notes"
+                  rows="4"
+                  placeholder="Colore, dettagli, consegna o altre informazioni utili"
+                ></textarea>
+              </label>
+
+              <p class="order-form-helper">
+                Il messaggio verra copiato negli appunti, se consentito dal browser, e si aprira
+                Telegram verso l'account del club: @Inolemela.
+              </p>
+              <p class="order-form-status" data-order-status aria-live="polite"></p>
+
+              <button class="button button-primary" type="submit">Apri Telegram per l'ordine</button>
+            </form>
+          </article>
         </div>
       </section>
     </main>
